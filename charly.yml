@@ -1,7 +1,7 @@
 version: 2026.232.0520
 hermes:
     candy:
-        version: 2026.144.1443
+        version: 2026.243.0100
         description: |
             Hermes self-improving AI agent by Nous Research, installed as a pixi CLI with a supervised entrypoint
             The hermes candy installs the upstream Nous Research hermes-agent as a
@@ -16,11 +16,11 @@ hermes:
             the source tree are real files in the image, and the running service +
             data volume are probed against a live deployment.
         require:
-            - '@github.com/opencharly/layer-nodejs:v2026.235.2056'
-            - '@github.com/opencharly/layer-supervisord:v2026.235.2056'
+            - '@github.com/opencharly/layer-nodejs:v2026.239.1624'
+            - '@github.com/opencharly/layer-supervisord:v2026.240.0121'
             - '@github.com/opencharly/layer-ripgrep:v2026.235.1653'
-            - '@github.com/opencharly/layer-ffmpeg:v2026.235.2057'
-            - '@github.com/opencharly/pod-pipewire:v2026.235.2110'
+            - '@github.com/opencharly/layer-ffmpeg:v2026.239.1614'
+            - '@github.com/opencharly/pod-pipewire:v2026.243.0508'
         env:
             HERMES_HOME: "/opt/data"
             TERMINAL_ENV: "local"
@@ -146,7 +146,7 @@ hermes-skill:
             hermes:
               base: fedora
               candy:
-                - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                - '@github.com/opencharly/layer-agent-forwarding:v2026.243.0408'
                 - hermes-full      # hermes + claude-code + codex + gemini + dev-tools + devops-tools + charly + tmux
                 - '@github.com/opencharly/pod-dbus:v2026.235.2115'
             ```
