@@ -1,7 +1,5 @@
-version: 2026.232.0520
 hermes:
     candy:
-        version: 2026.243.0910
         description: |
             Hermes self-improving AI agent by Nous Research, installed as a pixi CLI with a supervised entrypoint
             The hermes candy installs the upstream Nous Research hermes-agent as a
