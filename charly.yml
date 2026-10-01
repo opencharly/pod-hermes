@@ -14,11 +14,11 @@ hermes:
             the source tree are real files in the image, and the running service +
             data volume are probed against a live deployment.
         require:
-            - '@github.com/opencharly/layer-nodejs:v2026.239.1624'
-            - '@github.com/opencharly/layer-supervisord:v2026.240.0121'
+            - '@github.com/opencharly/layer-nodejs:v2026.272.0322'
+            - '@github.com/opencharly/layer-supervisord:v2026.271.1817'
             - '@github.com/opencharly/layer-ripgrep:v2026.235.1653'
-            - '@github.com/opencharly/layer-ffmpeg:v2026.239.1614'
-            - '@github.com/opencharly/pod-pipewire:v2026.243.0508'
+            - '@github.com/opencharly/layer-ffmpeg:v2026.272.0056'
+            - '@github.com/opencharly/pod-pipewire:v2026.273.1856'
         env:
             HERMES_HOME: "/opt/data"
             TERMINAL_ENV: "local"
