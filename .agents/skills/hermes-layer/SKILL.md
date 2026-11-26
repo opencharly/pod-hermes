@@ -157,12 +157,7 @@ hermes:
 - `/charly-coder:nodejs` -- Node.js runtime dependency
 - `/charly-infrastructure:supervisord` -- process manager dependency
 - `ripgrep` (opencharly/layer-ripgrep) -- fast search dependency
-- `/charly-selkies:ffmpeg` -- audio/video processing (negativo17 nonfree codecs)
-- `/charly-selkies:pipewire` -- audio support for voice features
 - `/charly-hermes:hermes-playwright` -- optional Playwright Chromium browser (standalone headless mode)
-- `/charly-selkies:chrome` -- provides `BROWSER_CDP_URL` via `env_provide` for shared browser in desktop boxes
-- `/charly-jupyter:jupyter` -- MCP server provider (`mcp_provide: jupyter`)
-- `/charly-selkies:chrome-devtools-mcp` -- Chrome DevTools MCP server (`mcp_provide: chrome-devtools`, the browser-automation tools)
 
 ## Related Commands
 
@@ -175,8 +170,6 @@ hermes:
 - `/charly-hermes:hermes` -- full-featured standalone (claude-code + codex + gemini + dev-tools + devops-tools + charly)
 - `/charly-hermes:hermes-playwright` -- agent with Playwright Chromium (standalone headless)
 - `/charly-openwebui:openwebui` -- alternative web UI frontend with similar MCP/LLM auto-config pattern
-- `/charly-selkies:selkies-labwc` -- deploy alongside for shared Chrome browser (cross-container CDP)
-- `/charly-jupyter:jupyter` -- deploy alongside for MCP notebook access (cross-container MCP)
 
 ## When to Use This Skill
 
