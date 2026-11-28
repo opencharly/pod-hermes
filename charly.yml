@@ -56,8 +56,6 @@ hermes:
               description: "Immich API key for programmatic access to the running immich instance"
               key: charly/api-key/immich
         mcp_accept:
-            - name: jupyter
-              description: "JupyterLab CRDT MCP server for notebook manipulation"
             - name: chrome-devtools
               description: "Chrome DevTools MCP server for browser automation and inspection"
         distro:
